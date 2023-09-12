@@ -1,4 +1,4 @@
-package testPrueba.model;
+package com.zara.testPrueba.dto;
 
 import java.time.LocalDateTime;
 
@@ -21,13 +21,13 @@ public class PricesRequest {
 	/**
 	 * The product id.
 	 */
-	@ApiModelProperty(value = "Identificador código de producto", name = "product_id", example = "1", required = true)
+	@ApiModelProperty(value = "Identificador cï¿½digo de producto", name = "product_id", example = "1", required = true)
 	private Integer product_id;
 	
 	/**
 	 * The brand id.
 	 */
-	@ApiModelProperty(value = "La identificación de la marca", name = "brand_id", example = "1", required = true)
+	@ApiModelProperty(value = "La identificaciï¿½n de la marca", name = "brand_id", example = "1", required = true)
 	private Integer brand_id;
 	
 	

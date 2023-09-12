@@ -1,23 +1,29 @@
-package testPrueba.model;
+package com.zara.testPrueba.dto;
 
 import java.time.LocalDateTime;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class PricesResponse {
+public class PricesRSDTO {
 
 	/**
 	 * The product id.
 	 */
-	@ApiModelProperty(value = "Identificador código de producto", name = "product_id", example = "1", required = true)
+	@ApiModelProperty(value = "Identificador cï¿½digo de producto", name = "product_id", example = "1", required = true)
 	private Integer product_id;
 
 	/**
 	 * The brand id.
 	 */
-	@ApiModelProperty(value = "La identificación de la marca", name = "brand_id", example = "1", required = true)
+	@ApiModelProperty(value = "La identificaciï¿½n de la marca", name = "brand_id", example = "1", required = true)
 	private Integer brand_id;
 
 	/**
@@ -35,7 +41,7 @@ public class PricesResponse {
 	/**
 	 * The end date.
 	 */
-	@ApiModelProperty(value = "Fecha fin", name = "id", example = "1", required = true)
+	@ApiModelProperty(value = "Fecha fin", name = "end_date", example = "1", required = true)
 	private LocalDateTime end_date;
 
 	/**

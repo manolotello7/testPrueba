@@ -1,4 +1,4 @@
-package testPrueba.entity;
+package com.zara.testPrueba.entity;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -12,14 +12,14 @@ import javax.persistence.Table;
 import com.sun.istack.NotNull;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Builder;
+import lombok.Data;
 
 /**
  * The type Superheroes.
  */
 @Entity
 @Table(name = "prices")
-@Builder
+@Data
 public class Prices implements Serializable {
 
 	/**
@@ -33,7 +33,7 @@ public class Prices implements Serializable {
 	@NotNull
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@ApiModelProperty(value = "La identificación de la marca", name = "brand_id", example = "1", required = true)
+	@ApiModelProperty(value = "La identificaciï¿½n de la marca", name = "brand_id", example = "1", required = true)
 	private Integer brand_id;
 
 	/**
@@ -61,14 +61,14 @@ public class Prices implements Serializable {
 	 * The product id.
 	 */
 	@NotNull
-	@ApiModelProperty(value = "Identificador código de producto", name = "product_id", example = "1", required = true)
+	@ApiModelProperty(value = "Identificador cï¿½digo de producto", name = "product_id", example = "1", required = true)
 	private Integer product_id;
 	
 	/**
 	 * The Pricing application disambiguator.
 	 */
 	@NotNull
-	@ApiModelProperty(value = "Desambiguador de aplicación de precios", name = "priority", example = "1", required = true)
+	@ApiModelProperty(value = "Desambiguador de aplicaciï¿½n de precios", name = "priority", example = "1", required = true)
 	private Integer priority;
 
 	/**
