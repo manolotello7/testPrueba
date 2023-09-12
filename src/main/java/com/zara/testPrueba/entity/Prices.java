@@ -1,7 +1,9 @@
 package com.zara.testPrueba.entity;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Currency;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +17,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * The type Superheroes.
+ * The type prices.
  */
 @Entity
 @Table(name = "prices")
@@ -76,13 +78,13 @@ public class Prices implements Serializable {
 	 */
 	@NotNull
 	@ApiModelProperty(value = "Precio del producto", name = "price", example = "35.50", required = true)
-	private Float price;
+	private BigDecimal price;
 
 	/**
 	 * The coin iso.
 	 */
 	@NotNull
 	@ApiModelProperty(value = "Iso de la moneda.", name = "curr", example = "EUR", required = true)
-	private String curr;
+	private Currency curr;
 
 }

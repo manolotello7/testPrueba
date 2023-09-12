@@ -1,5 +1,6 @@
 package com.zara.testPrueba.dto;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import io.swagger.annotations.ApiModelProperty;
@@ -48,6 +49,6 @@ public class PricesRSDTO {
 	 * The price of the product.
 	 */
 	@ApiModelProperty(value = "Precio del producto", name = "price", example = "35.50", required = true)
-	private Float price;
+	private BigDecimal price;
 
 }
